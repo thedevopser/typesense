@@ -14,4 +14,16 @@ services:
     environment:
       MP_SMTP_AUTH_ACCEPT_ANY: 1
       MP_SMTP_AUTH_ALLOW_INSECURE: 1
+
+  typesense:
+    image: typesense/typesense:26.0
+    restart: on-failure
+    environment:
+      TYPESENSE_DATA_DIR: /data
+      TYPESENSE_API_KEY: xyz
+    ports:
+      - "8108:8108"
+    volumes:
+      - typesense-data:/data
+    command: '--enable-cors'
 ###< symfony/mailer ###

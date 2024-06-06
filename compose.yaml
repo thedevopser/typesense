@@ -21,4 +21,5 @@ services:
 volumes:
 ###> doctrine/doctrine-bundle ###
   database_data:
+  typesense-data:
 ###< doctrine/doctrine-bundle ###

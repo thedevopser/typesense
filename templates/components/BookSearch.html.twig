@@ -1,0 +1,12 @@
+<div {{ attributes }} class="m-4">
+    <input
+            type="search"
+            data-model="search"
+    >
+
+    <ul>
+        {% for book in this.data %}
+           {{ dump(book) }}
+        {% endfor %}
+    </ul>
+</div>
