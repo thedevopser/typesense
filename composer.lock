@@ -8319,16 +8319,16 @@
         },
         {
             "name": "thedevopser/typesense-bundle",
-            "version": "V1.1",
+            "version": "V1.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/thedevopser/TypesenseBundle.git",
-                "reference": "044c3d3da5844fe9593c617e023818cac290b710"
+                "reference": "3ebc90175fef19cb384329c3fe0a86458f2f3961"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/thedevopser/TypesenseBundle/zipball/044c3d3da5844fe9593c617e023818cac290b710",
-                "reference": "044c3d3da5844fe9593c617e023818cac290b710",
+                "url": "https://api.github.com/repos/thedevopser/TypesenseBundle/zipball/3ebc90175fef19cb384329c3fe0a86458f2f3961",
+                "reference": "3ebc90175fef19cb384329c3fe0a86458f2f3961",
                 "shasum": ""
             },
             "require": {
@@ -8367,9 +8367,9 @@
             ],
             "description": "This bundle provides integration with Typesense in Symfony, fork from acseo",
             "support": {
-                "source": "https://github.com/thedevopser/TypesenseBundle/tree/V1.1"
+                "source": "https://github.com/thedevopser/TypesenseBundle/tree/V1.3"
             },
-            "time": "2024-06-05T12:40:52+00:00"
+            "time": "2024-06-06T09:22:47+00:00"
         },
         {
             "name": "twig/extra-bundle",
