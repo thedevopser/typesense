@@ -22,6 +22,6 @@ services:
 
     App\Twig\Components\BookSearch:
         arguments:
-            $bookFinder: '@typesense.collection_client'
+            $bookFinder: '@typesense.finder.books'
     # add more service definitions when explicit configuration is needed
     # please note that last definitions always *replace* previous ones

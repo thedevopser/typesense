@@ -28,16 +28,8 @@ class BookSearch
             return [];
         }
 
-        $searchRequest = [
-            (new TypesenseQuery($this->search))->addParameter('collection', 'author'),
-            (new TypesenseQuery($this->search))->addParameter('collection', 'publisher'),
-            (new TypesenseQuery($this->search))->addParameter('collection', 'books'),
-        ];
+        $query = new TypesenseQuery($this->search, 'name');
 
-        $commonParams = new TypesenseQuery($this->search, 'name');
-
-        $results = $this->bookFinder->multisearch($searchRequest, $commonParams);
-
-        return $results;
+        return $this->bookFinder->rawQuery($query)->getResults();
     }
 }
